@@ -1,5 +1,5 @@
-import Post from "../poststudent/Poststudent";
-import "./stupost.scss";
+import Post from "../club/club";
+import "./clubs.scss";
 
 
 const Posts = () => {

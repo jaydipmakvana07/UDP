@@ -1,4 +1,4 @@
-@import "../../style.scss";
+@import "../../../../style.scss";
 
 .share {
   @include themify($themes) {
@@ -12,6 +12,7 @@
 
     .container {
       padding: 20px;
+      position:relative;
       .top {
         display: flex;
         align-items: center;
@@ -22,6 +23,7 @@
           border-radius: 50%;
           object-fit: cover;
         }
+
         .textarea{
           border: none;
           outline: none;
@@ -33,6 +35,7 @@
 
         }
        
+        
 
         input {
           border: none;

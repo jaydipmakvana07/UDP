@@ -1,4 +1,4 @@
-@import "../../style.scss";
+@import "../../../style.scss";
 
 .post {
   @include themify($themes) {
@@ -83,7 +83,7 @@
             border: 1px solid;
             border-color: rgb(9, 194, 9) ;
          }
-         .reject{
+         .delete{
             display: inline-block;
             font-size: 17px;
             padding: 5px;
@@ -100,7 +100,7 @@
             text-align: center;
             text-decoration: none;
          }
-         .reject:hover{
+         .delete:hover{
 
             background-color: themed('bg');
             color: rgb(236, 13, 13);

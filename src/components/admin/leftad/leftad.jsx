@@ -1,20 +1,18 @@
-import "./leftBar.scss";
+import "./leftad.scss";
 
-import Friends from "@mui/icons-material/PsychologyRounded";
-import Groups from "@mui/icons-material/PeopleRounded";
+import Friends from "@mui/icons-material/CheckCircleOutlineRounded";
+
 import Placement from "@mui/icons-material/DvrRounded";
 import Club from "@mui/icons-material/ScienceRounded";
 import Intern from "@mui/icons-material/EngineeringRounded";
 import Setting from "@mui/icons-material/SettingsSuggestRounded";
 import Logout from "@mui/icons-material/LogoutRounded";
 import Events from "@mui/icons-material/EventNoteRounded";
-import Messages from "@mui/icons-material/ChatRounded";
 import { Link } from "react-router-dom";
 
 
 
-
-import { AuthContext } from "../../context/authContext";
+import { AuthContext } from "../../../context/authContext";
 import { useContext } from "react";
 import React from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -40,37 +38,19 @@ const LeftBar = () => {
           <div className="item">
             <Friends/>
             <div className="text">
-              <span>Student's Idea</span>
+              <span>Latest Achievement</span>
             </div>
             
           </div>
-          <div className="item">
-            
-            <Groups/>
-            <div className="text">
-              <span>Groups</span>
-            </div>
-            
-          </div>
-          <div className="item">
-            <Messages/>
-            <div className="text">
-              <span>Messages</span>
-            </div>
-            
-          </div>
-          
+         
           <div className="item">
             <Club/>
-            <Link to="/club" className="link" style={{ textDecoration: "none" }}>
-              <div className="text">
-               
-                <span> Clubs</span>
-                
-              </div>
+            <Link to="/admin/club" className="link" style={{ textDecoration: "none" }}>
+            <div className="text">
+              <span>Clubs</span>
+            </div>
             </Link>
           </div>
-          
           
         </div>
         <hr />
@@ -80,26 +60,23 @@ const LeftBar = () => {
           
           <div className="item">
             <Events/>
-            <Link to="/event" className="link" style={{ textDecoration: "none" }}>
+            <Link to="/admin/event" className="link" style={{ textDecoration: "none" }}>
             <div className="text">
-              
               <span>Events</span>
             </div>
             </Link>
-            
           </div>
           <div className="item">
             <Placement/>
-            <Link to="/placement" className="link" style={{ textDecoration: "none" }}>
+            <Link to="/admin/placement" className="link" style={{ textDecoration: "none" }}>
             <div className="text">
               <span>Placement Corner</span>
             </div>
             </Link>
-            
           </div>
           <div className="item">
             <Intern/>
-            <Link to="/interns" className="link" style={{ textDecoration: "none" }}>  
+            <Link to="/admin/intern" className="link" style={{ textDecoration: "none" }}>  
             <div className="text">
               <span>Internship/ Project</span>
             </div>
@@ -126,9 +103,8 @@ const LeftBar = () => {
             <Link to="/login" className="link" style={{ textDecoration: "none" , color:"rgb(202, 45, 45)"}}>
             <div className="text">
               <span>Log Out</span>
-            </div>
+            </div>   
             </Link>
-           
             
           </div>
         

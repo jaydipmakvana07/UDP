@@ -1,5 +1,5 @@
 
-import Posts from  "../../components/stupost/stupost"
+import Posts from  "../../components/student/stupost/stupost"
 
 import "./student.scss"
 
